@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <title>Aditi Rao</title>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
+            font-family: 'Times New Roman', sans-serif;
             scroll-behavior: smooth;
         }
 
@@ -31,8 +34,8 @@
 
         .btn-outline {
             color: black;
-            background-color: white;
-            border: 2px solid black;
+            background-color: rgb(223, 203, 203);
+            border: 2px solid rgb(0, 0, 0);
             opacity: 0.5;
             transition: 0.3s;
 
@@ -52,13 +55,13 @@
         }
 
         .contacticon a {
-            color: rgb(33, 37, 41);
+            color: rgb(43, 98, 153);
         }
 
         .course {
             margin: 0 10px;
             padding: 20px;
-            background-color: #eeeeee;
+            background-color: #b6a3a3;
             border-radius: 5px;
             display: flex;
             justify-content: center;
@@ -81,8 +84,9 @@
 </head>
 
 <body>
+    <!--Nav links-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#landing"> Aditi Rao<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -90,11 +94,15 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="#courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#workExperience">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -102,101 +110,105 @@
             </ul>
         </div>
     </nav>
+    
+
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
-        <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
-        </div>
-        <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
-                University.</h5>
-        </div>
-        <div class="row my-4">
-            <div class="col my-3"><img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Python" /></div>
-            <div class="col my-3"><img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Angular" /></div>
-            <div class="col my-3"><img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                    data-placement="top" title="TypeScript" /></div>
+        <!-- Bootstrap component - Carousal-->
+    <div class="container align-items-center">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicator -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-            <div class="col my-3"><img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="C#" /></div>
-            <div class="col my-3"><img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Node.js" /></div>
-            <div class="col my-3"><img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Java" /></div>
-
-            <div class="col my-3"><img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="ASP.NET" /></div>           
-                     <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="MongoDB" /></div>
-
-        </div>
-        <div class="row my-4">
-            <div class="col">
-                <a href="#projects"><button type="button" class="btn btn-outline">Projects</button></a>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+            <img src="images/python.jpg" alt="Los Angeles" style="width:5%;">
             </div>
+
+            <div class="item">
+            <img src="images/angular.jpg" alt="Angular" style="width:5%;">
+            </div>
+        
+            <div class="item">
+            <img src="images/typescript.jpg" alt="Typescript" style="width:5%;">
+            </div>
+
+            <div class="item">
+            <img src="images/csharp.jpg" alt="CSharp" style="width:5%;">
+            </div>
+
+            <div class="item">
+            <img src="images/node.jpg" alt="Node" style="width:5%;">
+            </div>
+
+            <div class="item">
+            <img src="images/java.jpg" alt="Java" style="width:5%;">
+            </div>
+
+            <div class="item">
+            <img src="images/aspnet.jpg" alt="ASPnet" style="width:5%;">
+            </div>
+
+            <div class="item">
+            <img src="images/mssql.jpg" alt="MsSQL" style="width:5%;">
+            </div>
+            
+            <div class="item">
+            <img src="images/mongodb.jpg" alt="MongoDB" style="width:5%;">
+            </div>
+        </div>
+        </div>
+    </div>
+        
+        <!-- Bootstrap component - Alert-->
+        <div class="rounded border border-primary alert alert-error">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>WELCOME TO MY PAGE!</strong> Please feel free to contact me!
+        </div>
+
+        <!--Intro-->
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Aditi Rao</h4>
+        </div>
+        <div class="row mx-auto">
+            <h5 class="display-5 mx-auto faded text-center">Information Science & Technology Student at Temple
+                University
+            </h5>
+        </div>
+        
+        <!--Buttons-->
+        <div class="row my-4">
             <div class="col">
                 <a href="#courses"><button type="button" class="btn btn-outline">Courses</button></a>
+            </div>
+            <div class="col">
+                <a href="#workExperience"><button type="button" class="btn btn-outline">Work Experience</button></a>
+            </div>
+            <div class="col">
+                <a href="#projects"><button type="button" class="btn btn-outline">Projects</button></a>
             </div>
             <div class="col">
                 <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
             </div>
         </div>
-        <div class="row mt-5 next">
-            <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Projects"></i></a> </div>
 
-    </div>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
-        <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
-        </div>
-        <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
-        </div>
-        <div class="row w-100">
-            <h5>Inspiro for Esperanza</h5>
-        </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
-                in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
-                sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
-                tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
-                purus. Suspendisse imperdiet massa nec sem dictum luctus. Vestibulum at porta lectus, sed
-                faucibus libero. </p>
-        </div>
-        <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
-        </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
-                finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
-                sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
-        </div>
-        <div class="row w-100">
-            <h5>Query Dating Site</h5>
-        </div>
-        <div class="row w-100">
-            <p class="text-justify">Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
-                egestas. Nullam facilisis condimentum consequat. Integer arcu nibh, ullamcorper non fringilla quis,
-                tempus sit amet turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor sit
-                amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
-                Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-                efficitur at. </p>
-        </div>
         <div class="row mt-5 next">
             <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Courses"></i></a> </div>
+                    title="Courses"></i>
+            </a>
+        </div>
     </div>
+
+    <!--Courses-->
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Courses</h4>
         </div>
-        <div class="row mx-auto mb-4">
-            <h5 class="display-5 mx-auto faded text-center">Not as tasty as a main course, but close.</h5>
-        </div>
+        
         <div class="row w-100 justify-content-center my-3">
             <div class="col text-center course">
                 <h5>Information Systems Analysis and Design</h5>
@@ -222,29 +234,164 @@
             </div>
         </div>
         <div class="row mt-5 next">
-            <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Contact"></i></a> </div>
+            <a href="#workExperience" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="workExperience"></i>
+            </a> 
+        </div>
     </div>
+    
+    <!--Work Experience-->
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="workExperience">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Work Experience</h4>
+        </div>
+       
+        <div class="row w-100">
+            <h5>Data Analyst at Temple University College of Science and Technology (January 2022 - Present)</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                - Partner with the Office of Graduate Affairs as the first data hire to create interactive dashboards, utilizing SQL, data
+                warehousing programs, Power BI, and dashboard/visualization toolsets for data analysis
+            </p>
+            <p>
+                - Work collaboratively with office members to provide technical support and also communicate issues that need to be resolved
+            </p>
+            <p>
+                - Optimize the hiring process of graduate students by centralizing all student data in a single dashboard, adding updates based on
+                incoming data and new requests/suggestions from the Enrollment Coordinator during bi-weekly check-ins
+            </p>
+        </div>
+
+        <div class="row w-100">
+            <h5>Resident Assistant at Temple University Housing and Residential Life (August 2020 - Present)</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                - Serve as a peer counselor to assist first-year students with transitioning into college, planning and executing multiple programs
+                regarding personal, professional, and cultural growth monthly
+            </p>
+            <p>
+                - Assist in the supervision of a ten-floor residence hall, respond to building emergencies, manage administrative duties, including
+                incident reports, room transfers, and maintenance requests, and manage roommate conflicts to help create a safe environment for
+                all students to flourish academically and socially            </p>
+            <p>
+                - Develop an inclusive and supportive community with 60+ residents, facilitate student engagement, and educate students on their
+                rights and responsibilities as identified in the code of conduct and university policies
+            </p>
+        </div>
+        
+        <div class="row w-100">
+            <h5>Software Quality Tester at Clinical Ink Inc. (Summer 2022)</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                - Reviewed software requirements and created and executed automated software test plans, cases, and scripts using qTest tool
+            </p>
+            <p>
+                - Worked collaboratively with offshore QA and development team to prepare test scenarios to resolve issues and ensure
+                standards/guidelines are met
+            </p>
+            <p>
+                - Documented and reported software defects involving program functionality, output, and content to software developers
+            </p>
+        </div>
+
+        <div class="row w-100">
+            <h5> Undergraduate Teaching Assistant for Intro to Acaedmics in Computer Science at Temple University College of Science and Technology (August 2021 – December 2021)</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                - Assisted the professor in introducing a diverse group of 280 students to the field of computing, exposing them to potential
+                degree programs, career options, and internship/research opportunities
+            </p>
+            <p>
+                - Offered weekly office hours for students to provide guidance on assignments and major-related advice, and follow-up with
+                students to help enhance performance and track academic progress
+            </p>
+            <p>
+                - Fostered a stress-free environment by providing timely responses to students’ needs and requests and encourage academic
+                growth and improvement by providing constructive feedback on weekly assignments
+            </p>
+        </div>
+
+        <div class="row w-100">
+            <h5> Undergraduate Teaching Assistant/Recitation Leader for Discrete Math at Temple University College of Science and Technology (January 2021 - May 2021)</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">
+                - Allotted 12-15 hours weekly to recitation and office hours for 40 students to clearly communicate course material, identifying
+                and focusing on areas of weakness and providing timely feedback on assignments/quizzes
+            </p>
+            <p>
+                - Increased student performance by encouraging participation in class and leading study groups outside of regular class time
+            </p>
+            <p>
+                - Monitored and enhanced student progress and performance, reporting back to the professor and making recommendations on the
+                efficacy of different teaching methods
+            </p>
+        </div>
+
+        <div class="row mt-5 next">
+            <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Projects"></i>
+            </a> 
+        </div>
+    </div>
+
+    <!--Projects-->
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
+        </div>
+      
+        <div class="row w-100">
+            <h5>Resnick Academic Support Center Alumni Tracker</h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">Design a web-based relationship management system to track and facilitate student athlete 
+                alumni communiation. Goals of the system include, but are not limited to. providing tracking and optimization 
+                of demographic, academic, employement, and athletic informatoin both on historical and post-graduate basis that 
+                is accessible by all Resnick student and professional staff. </p>
+        </div>
+
+        <div class="row w-100">
+            <h5>Office of Graduate Affairs Student Hire Dashboard </h5>
+        </div>
+        <div class="row w-100 mb-4">
+            <p class="text-justify">Optimize the hiring process of graduate students by centralizing all student data in a single dashboard, using Power BI, adding updates based on
+                incoming data and new requests/suggestions from the Enrollment Coordinator. </p>
+        </div>
+        
+        <div class="row mt-5 next">
+            <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Contact"></i>
+            </a>
+        </div>
+         
+    </div>
+
+    <!-- Contact Me-->
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Contact me:</h4>
         </div>
-        <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
-        </div>
+       
         <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
+            <a href="mailto:aditi.rao@temple.edu" class="col mx-3"><i class="fas fa-envelope-square"
                     data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
+            <a href="https://www.linkedin.com/in/aditirao2023/" class="col mx-3"><i class="fab fa-linkedin"
                     data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
+            <a href="https://github.com/raoaditib" class="col mx-3"><i class="fab fa-github-square"
                     data-toggle="tooltip" data-placement="top" title="Github"></i></a>
 
         </div>
+
         <div class="row mt-5">
             <a href="#landing"><button type="button" class="btn btn-outline">Return to Top</button></a>
-        </div>
+        </div> 
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
